@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap&subset=cyrillic');
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('MyriadPro-Regular.eot');
+    src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-Regular.woff') format('woff'),
+    url('MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+.header1 {
+    font-size: 0;
+    height: 95px;
+    display: flex;
+}
+
+/* ---------------- логитип -------*/
+.logotext {
+    margin: auto 0 auto 2%;
+    font-size: 18pt;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    display: inline-block;
+}
+a.logotext, a.logotext:hover, a.logotext:visited{
+    color: black
+}
+
+/* --------------------------------- */
+
+/* --------------- мею шапки ------------ */
+
+.menu {
+    display: inline-block;
+    margin: auto 0 auto 8%;
+    width: 33%;
+}
+.menucategories {
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    display: inline-block;
+
+
+}
+a.menucategories, a.menucategories:visited{
+    color: black;
+}
+a.menucategories:hover {
+    color: #ff621e
+}
+a.reyt, a.reyt:hover, a.reyt:visited{
+    color: #ff621e;
+}
+@media (min-width: 1505px){
+    .menucategories{
+        margin: auto 0 auto 5%;
+    }
+}
+@media (max-width: 1504px){
+    .menucategories{
+        margin: auto 0 auto 2%;
+    }
+}
+
+/* ------------------------------------ */
+
+/*--------------строка поиска---------*/
+
+.search {
+background: none;
+width: 22%;
+display: inline-block;
+margin: auto 0 auto 8%;
+}
+
+.search input {
+    color: black;
+    font-size: 13pt;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-bottom-style: groove;
+    opacity: 0.4;
+
+}
+
+
+/*--------------------------------------*/
+
+/*------------кнопка войти--------------*/
+.login {
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin: auto 3% auto auto;
+}
+a.login:visited, a.login, a.login:hover{
+    color: #456a8d;
+}
+
+/*--------------------------------------------*/
+
+@media (max-width:1150px){
+    .search {
+        display:none
+    }
+    .menu {
+        display: none;
+    }
+    .logotext {
+        font-size: 30pt;
+    }
+    .login {
+        font-size: 25pt;
+    }
+}
+
+
+/*----------реклама, вторая шапка-------------*/
+
+.header2 {
+    background-image: url("png/image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    display: flex;
+    
+}
+.add {
+    height: 298px;
+    margin: auto auto 30px auto;
+    display: flex;
+    width: 42%;
+}
+.imgphone {
+    width: auto;
+    display: inline-block;
+}
+.addtext {
+    margin: 0 0 auto 6%;
+    width: 75%;
+
+}
+.addtitle1 {
+    line-height: 1.0;
+    display: inline-block;
+    font-size: 40pt;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    margin-top: 0;
+}
+.addtitle2 {
+    font-size: 19pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #fff;
+    margin-top: -35px;
+    
+}
+.addtitle3 {
+    font-size: 19pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #fff;
+    margin-top: -15px;
+    
+}
+.addtitle4 {
+    font-size: 8pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #fff;
+}
+@media (max-width: 1517px;) and (min-width: 1249px){
+    .addtitle4{
+        font-size: 7pt;
+    }
+}
+
+/*------------------------------------------*/
+
+.page {
+    margin: 0 2% 0 2%;
+    height: 1500px;
+}
+
+/*--------блок "смотрите в кинотеатрах"---------*/
+
+.watchcinemablock {
+    margin-top: 15px;
+}
+.watchcinematitle {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 13pt;
+}
+a.watchcinemalink, a.watchcinema:visited {
+    color: #456a8d;  
+}
+a.watchcinemalink:hover {
+    color: #ff621e;
+}
+.cinemafilms {
+    display: flex;
+}
+.cinemafilm {
+    width: 139px;
+    height: 199px;
+    position: relative;
+    margin: auto;
+    display: inline-block;
+}
+.cinemafilm1 {
+    margin-left: 0;
+}
+.cinemafilm9 {
+    margin-right: 0;
+}
+@media (max-width: 1400px){
+    .cinemafilm1 {
+        display: none;
+    }
+    .cinemafilm9 {
+        display: none;
+    }
+    .cinemafilm2 {
+        margin-left: 0;
+    }
+    .cinemafilm8 {
+        margin-right: 0;
+    } 
+}
+@media (max-width: 1048px){
+    .cinemafilm2 {
+        display: none;
+    }
+    .cinemafilm8 {
+        display: none;
+    }
+    .cinemafilm3 {
+        margin-left: 0;
+    }
+    .cinemafilm7 {
+        margin-right: 0;
+    } 
+}
+}
+.cinemafilmtitle {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 13pt
+}
+a.titlelink, a.titlelink:visited {
+    color: black;
+}
+a.titlelink:hover {
+    color: #ff621e
+}
+
+.zhanr {
+    margin: 0 5px auto auto;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 9pt;
+    background-color: #f3efef;
+    padding: 4px 7px;
+}
+.zhanr2 {
+    margin-top: 10px;
+}
+a.zhanrlink, a.zhanrlink:visited {
+    color: #bebebe;
+}
+a.zhanrlink:hover {
+    color: #ff621e;
+}
+.rating {
+    position: absolute;
+    color: white;
+    font-size: 7pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    padding: 3px;
+    width: 15px;
+    margin-top: 0;
+       
+}
+
+/*--------------------------------------------*/
+
+/*--------------точки под "смотрите в кинотеатрах"-------*/
+.points {
+    margin-top: 160px;
+    display: flex;
+}
+.pointblock {
+    margin: auto;
+}
+.point{
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    margin: auto 3px;
+}
+.point:hover {
+    background-color: #bebebe;
+}
+/*--------------------------------------------*/
+
+/*--------------Результаты уик-энда------------*/
+
+.results{
+    font-size: 0;
+}
+.dateresult {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #808080;
+    font-size: 12pt;
+    display: inline-block;
+    margin-left: 3%;
+}
+.oneresult {
+    margin-top: 1px;
+    width: 33.16%;
+    display: inline-flex;
+}
+.resultlogo {
+    margin: auto 0;
+    display: inline-block;
+}
+.resulttitle {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #808080;
+    font-size: 11pt;
+    margin-left: 0.8%;
+}
+.resultmoney {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #000;
+    font-size: 11pt;
+    margin-left: 2%;
+
+}
+.resultmoneychangesdown {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #f55342;
+    font-size: 11pt;
+    margin-left: 2%;
+}
+.resultmoneychangesup {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #92c834;
+    font-size: 11pt;
+    margin-left: 2%;
+}
+.arrow {
+    margin: auto 0 auto 2%;
+    display: inline-block;
+}
+
+.resultpercentdown {
+    margin-left: 1%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 11pt;
+    color: #f55342;
+}
+.resultpercentup {
+    margin-left: 1%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 11pt;
+    color: #92c834;
+}
+@media {
+    .dateresult {
+        font-size: 10pt;
+    }
+    .resultpercentup, .resultpercentdown, .resultmoneychangesup, .resultmoneychangesdown, .resultmoney, .resulttitle {
+        font-size: 9pt;
+    }
+}
+
+/*---------------------------------------*/
+
+
+/*--------смотрите на кинопоиске---------*/
+
+.filmprice {
+    position: absolute;
+    color: white;
+    font-size: 7pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    padding: 3px;
+    margin: 181px auto;
+    background-color: #000;
+    backdrop-filter: blur(19px);
+    opacity: 0.4;
+}
+
+/*---------------------------------------*/
+
+/*--------------оджидаемые фильмы--------------*/
+
+.waitfilms {
+    font-size: 0;
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+.waitfilmslist {
+    margin-top: 20px;
+    display: flex;
+    padding: 0;
+}
+.onewaitfilm {
+    margin: auto;
+    display: flex;
+}
+.waitfilmimg{
+    margin-right: 9%;
+    display: inline-block;
+}
+.onewaitfilmtext {
+    width: 173px;
+    padding: 0;
+
+}
+.onewaitfilmtitle {
+    font-size: 12pt;
+    margin-top: 0;
+    line-height: 1.5;
+    margin-bottom: 26px;
+}
+.rezh {
+    font-size: 9pt;
+    display: inline-block;
+    color: #afafaf;
+    margin: auto auto 10px;
+}
+.rezhname {
+    color: #2f5273;
+    margin-left: 2px
+}
+
+.onewaitfilmpercent {
+    font-family: 'Myriad Pro Regular';
+    font-size: 12pt;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #b8db7f;
+}
+a.waittitlelink, a.waittitlelink:visited {
+    color: #000;
+}
+a.waittitlelink:hover{
+    color: #ff621e;
+}
+.onelinetitle {
+    margin-bottom: 48px;
+}
+.onewaitfilm1 {
+    margin-left: 0;
+}
+.onewaitfilm5 {
+    margin-right: 0;
+}
+@media (max-width: 1260px){
+    .onewaitfilm5 {
+        display: none;
+    }
+
+    .onewaitfilm4 {
+        margin-right: 0;
+    }
+}
+
+
+/*---------------------------------------*/
+
+/*------------------главное---------------------*/
+
+.glav {
+    margin-top: 20px;
+}
+.glavline {
+    display: flex;
+    margin-top:0;
+}
+.onenew {
+    margin: auto;
+    font-size: 0;
+    display: inline-block;
+    width: 33%;
+    }
+.newimg {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.newtext {
+    margin-left: 1%;
+    display: inline-block;
+}
+
+.newtitle {
+    line-height: 30px;
+    font-size: 11pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.newcategory {
+    font-size: 9pt;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+@media (max-width: 1481px) {
+    .newtitle {
+        font-size: 9pt;
+    }
+    .newcategory {
+        font-size: 8pt;
+    }
+}
+a.newtitlelink, a.newtitlelink:visited {
+    color: #000;
+}
+a.newtitlelink:hover {
+    color: #ff621e;
+}
+a.newcategorylink, a.newcategorylink:visited {
+    color: #000;
+}
+a.newcategorylink:hover {
+    color: #959595;
+}
+.new1{
+    margin-left: 0;
+}
+.new3 {
+    margin-right: 0;
+}
+
+
+
+
+/*---------------------------------------*/
